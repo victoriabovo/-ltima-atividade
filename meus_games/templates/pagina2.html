@@ -1,0 +1,311 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Biblioteca pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #601161;
+            color: rgb(246, 240, 240);
+            text-align: center;
+            padding: 20px 0;
+        }
+        .carousel {
+            width: 80%;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .book {
+            flex: 0 0 300px;
+            margin-right: 20px;
+            border: 1px solid #decaca;
+            padding: 10px;
+        }
+        .book:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu mundo literário</h1>
+    </header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="..\static\livro\logo.png" alt="Logo" width="100" height="70" class="d-inline-block align-text-top">
+            Início
+          </a>
+        </div>
+      </nav>
+     
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\amorpararecordar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Um amor para recordar</h5>
+              <p class="card-text"><small class="text-body-secondary">Nicholas Sparks</small></p>
+              <p class="card-text">Aos 17 anos, a vida de Landon Carter muda para sempre. Largado pela namorada e sem companhia para o baile da escola, ele está desesperado para dar a volta por cima. Como as garotas que lhe interessam já têm par, sua única opção é alguém impensável: Jamie Sullivan, a filha do pastor da igreja que frequenta.
+
+                Para Landon e seus amigos, Jamie é muito esquisita. Anda sempre com as mesmas roupas, não usa maquiagem, vive com o cabelo preso e carrega a Bíblia surrada para todos os lados. A vida dela gira em torno do pai viúvo, do resgate de animais feridos e do seu trabalho como voluntária num orfanato.
+                
+                Nenhum garoto jamais a chamou para sair – até Landon fazer o convite. A menina aceita com uma condição: ele não pode se apaixonar por ela. A princípio, parece uma tarefa fácil, mas o garoto se pega passando cada vez mais tempo com Jamie, e uma transformação pessoal começa a acontecer.
+                
+                Com ela, Landon aprenderá sobre as profundezas do coração humano e tomará uma decisão extraordinária que o conduzirá à jornada do amadurecimento.</p>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+                <div class="card-body">
+                  <a href="https://a.co/d/9MPPFiI" class="card-link">Clique aqui</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\biblioteca.jpg" class="card-img-top" alt="..">
+            <div class="card-body">
+              <h5 class="card-title">A Biblioteca da meia noite</h5>
+              <p class="card-text"><small class="text-body-secondary">Matt Haig</small></p>
+              <p class="card-text">Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas. Arrependida das escolhas que fez no passado, ela vive se perguntando o que poderia ter acontecido caso tivesse vivido de maneira diferente. Após ser demitida e seu gato ser atropelado, Nora vê pouco sentido em sua existência e decide colocar um ponto final em tudo. Porém, quando se vê na Biblioteca da Meia-Noite, Nora ganha uma oportunidade única de viver todas as vidas que poderia ter vivido.
+
+                Neste lugar entre a vida e a morte, e graças à ajuda de uma velha amiga, Nora pode, finalmente, se mudar para a Austrália, reatar relacionamentos antigos – ou começar outros –, ser uma estrela do rock, uma glaciologista, uma nadadora olímpica... enfim, as opções são infinitas. Mas será que alguma dessas outras vidas é realmente melhor do que a que ela já tem?</p>
+                <br>
+                <br>
+                <br>
+                
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/eB3moLG" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\verity.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Verity</h5>
+              <p class="card-text"><small class="text-body-secondary">Colleen Hoover</small></p>
+              <p class="card-text">Lowen chega à casa de Crawford, pronto para separar anos de anotações e esboços de Verity, na esperança de encontrar material suficiente para iniciá-la. O que Lowen não espera descobrir no caótico escritório é uma autobiografia inacabada que Verity nunca quis que ninguém lesse. Página após página de admissões arrepiantes, incluindo a lembrança de Verity da noite em que sua família foi alterada para sempre.
+
+                Lowen decide manter o manuscrito escondido de Jeremy, sabendo que seu conteúdo devastaria o pai já enlutado. Mas à medida que os sentimentos de Lowen por Jeremy começam a se intensificar, ela reconhece todas as maneiras pelas quais poderia se beneficiar se ele lesse as palavras de sua esposa. Afinal, não importa o quão dedicado Jeremy seja à sua esposa ferida, uma verdade tão horripilante tornaria impossível para ele continuar a amá-la.
+                </p>
+                <br>
+                <br>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/ioxQwgY" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\novembro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Novembro 9</h5>
+              <p class="card-text"><small class="text-body-secondary">Colleen Hoover</small></p>
+              <p class="card-text">Apesar de ter apenas 18 anos, Fallon já passou por muita coisa. Sobreviveu a um incêndio que a deixou desfigurada, e viu a carreira de atriz desmoronar por conta das cicatrizes. Agora, no aniversário do fatídico acidente, ela finalmente se sente pronta para sair de Los Angeles e recomeçar a vida em Nova York.
+
+                No almoço de despedida com o pai, bem na véspera da mudança, Fallon conhece Ben, um aspirante a escritor. A atração entre os dois faz com que passem o dia inteiro juntos, mas a partida iminente de Fallon os impede de viver esse amor. Decididos a vencer o destino, fazem uma promessa: se encontrar todo ano nessa mesma data.
+                
+                Ao longo do tempo, muitas coisas mudam na vida dos dois, mas o ritual dos encontros e sua história de amor viram enredo do livro de Ben. E, quando parece que o destino finalmente conspira para que fiquem juntos, Fallon descobre algo que a faz questionar as motivações do homem por quem está apaixonada. Será que ela não passa de mais uma personagem na trama de Ben?
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/duKyxXl" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\leituradeverão.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Leitura de verão</h5>
+              <p class="card-text"><small class="text-body-secondary">Emily Henry</small></p>
+              <p class="card-text">Augustus Everett é um aclamado autor de ficção literária. January Andrews escreve romances best-seller. Enquanto ela cria seus “felizes para sempre”, ele mata todos os seus personagens.
+
+                Eles definitivamente são polos opostos.
+                
+                A única coisa que têm em comum é que, durante três meses, vão morar em casas de praia vizinhas, ambos falidos e paralisados por um bloqueio criativo.
+                
+                Até que, em uma noite nebulosa, uma coisa leva à outra e eles fazem um acordo que tem o objetivo de arrancá-los da zona de conforto: Augustus vai passar o verão redigindo um livro com final feliz, e January vai escrever o próximo clássico da literatura. Ela vai levá-lo a viagens de campo dignas de uma comédia romântica, e ele a acompanhará em entrevistas com sobreviventes de um culto de suicídio (obviamente).
+                
+                Cada um vai finalizar um livro e ninguém vai se apaixonar. Será?
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/ig74d4p" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\meucoração.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Eu e esse meu coração</h5>
+              <p class="card-text"><small class="text-body-secondary">C.C Hunter</small></p>
+              <p class="card-text">Leah MacKenzie, de 17 anos, não tem coração. O que a mantém viva é um coração artificial que ela carrega dentro de uma mochila.
+
+                Com seu tipo sanguíneo raro, um transplante é como um sonho distante. Conformada, ela tenta se esquecer de que está com os dias contados, criando uma lista de “coisas para fazer antes de morrer”.
+                
+                De repente, Leah recebe uma segunda chance: há um coração disponível! O problema é quando ela descobre que o doador é um garoto da sua escola – e que supostamente se matou!
+                
+                Matt, o irmão gêmeo do doador, se recusa a acreditar que Eric se suicidou. Quando Leah o procura, eles descobrem que ambos têm sonhos semelhantes que podem ter pistas do que realmente aconteceu a Eric.
+                
+                Enquanto tentam desvendar esse mistério, Matt e Leah se apaixonam e não querem correr o risco de perder um ao outro. Mas nem a vida nem um coração transplantado vem com garantias.
+                
+                Quem diria que viver exige mais coragem do que morrer?
+                </p>
+                <br>
+                <br>
+                <br>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/foClB4D" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\verao.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Até o verão terminar</h5>
+              <p class="card-text"><small class="text-body-secondary">Colleen Hoover</small></p>
+              <p class="card-text">Filha de uma mãe problemática e um pai ausente, Beyah precisou aprender a se virar sozinha desde pequena. Sua vida foi trilhada com muitas decepeções. Mas ela está prestes a mudar a sua sorte graças a si mesma, e a mais ninguém, por conta da bolsa de estudos que ganhou para estudar em uma boa universidade. Apenas dois curtos meses separam o tão sonhado futuro do passado que tanto deseja deixar para trás. Mas uma reviravolta faz Beyah perder até mesmo a casa em que mora.
+
+                Sem opção, ela recorre ao último recurso que tem e precisará passar o resto do verão na casa de praia do pai que mal conhece, da nova esposa e da filha dela que nem ao menos ouvira falar. O plano de Beyah é se manter quase invisível até poder ir para a faculdade. Mas o vizinho da casa ao lado torna tudo muito mais complicado. Afinal, é difícil ignorar o rico, bonito e misterioso Samson.
+                
+                Os dois parecem não ter nada em comum. Ela viveu uma vida sem dinheiro ou amor enquanto ele tem uma família rica e privilegiada. Mas no olhar dele vive uma tristeza que apenas quem também a carrega dentro de si consegue reconhecer. E isso os torna irresístiveis um para o outro. Sem terem como fugir da atração que sentem, Beyah e Samson resolvem se dar uma chance, mas apenas até o verão terminar.
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/9Q6r8HJ" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\loucospolivros.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Loucos por livros</h5>
+              <p class="card-text"><small class="text-body-secondary">Emily Henry</small></p>
+              <p class="card-text">Os livros são a vida de Nora Stephens ― e ela definitivamente não é o tipo de heroína dos livros. Não é a garota impulsiva, nem a descontraída, muito menos a imagem da meiguice. Na verdade, as únicas pessoas para quem Nora pode ser considerada uma heroína são seus clientes, para os quais ela consegue contratos polpudos como agente literária, além de sua amada irmã mais nova, Libby.
+  
+                E é por isso que Nora concorda em passar o verão em Sunshine Falls, Carolina do Norte, quando Libby implora por uma viagem de irmãs. Secretamente, Libby espera que uma autêntica experiência no interior transforme a vida de Nora, que a irmã está convencida de que precisa se tornar a heroína de sua própria história. Mas, em vez de piqueniques no campo ou encontros inesperados com um belo médico, ou quem sabe com um barman musculoso, Nora esbarra em Charlie Lastra, um editor ranzinza que ela conhece de Nova York. Seria um daqueles encontros fofos se não fosse o fato de que eles já se viram antes ― e nunca foi fofo.
+                
+                Se Nora sabe que não é a heroína ideal, Charlie também sabe que não é o herói de ninguém. Mas, à medida que se veem juntos repetidas vezes ― em uma série de coincidências que nenhum editor que se preze permitiria ―, o que eles descobrem pode acabar por deslindar as histórias cuidadosamente elaboradas que eles escreveram sobre si mesmos.
+                </p>
+                <br>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/dzFDoP9" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\tardedemais.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tarde Demais</h5>
+              <p class="card-text"><small class="text-body-secondary">Colleen Hoover</small></p>
+              <p class="card-text">Para proteger o irmão, Sloan foi ao inferno e fez dele seu lar. Ela está presa em um relacionamento com Asa Jackson, um perigoso traficante, e quanto mais os dias passam, mais parece impossível enxergar uma saída. Imersa em uma casa incontrolável que mais parece um quartel general, rodeada por homens que ela teme e sem um minuto de silêncio, também parece impossível encontrar qualquer motivo para se sentir bem. Até Carter surgir em sua vida.
+
+                Sloan é a melhor coisa que já aconteceu a Asa. E se você perguntasse ao rapaz, ele diria que também é a melhor coisa que já aconteceu a Sloan. Apesar de a garota não aprovar seu arriscado estilo de vida, Asa faz o que é preciso para permanecer sempre um passo a frente em seu negócio e proteger sua garota. Até Carter surgir em sua vida.
+                
+                A chegada de Carter pode afetar o frágil equilíbrio que Sloan lutou tanto para conquistar, mas também pode significar sua única saída de uma situação que está ficando insustentável.
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+              <div class="card-body">
+                <a href="https://a.co/d/fLmeEFM" class="card-link">Clique aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..\static\livro\agarotadolago.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">A garota do lago</h5>
+              <p class="card-text"><small class="text-body-secondary">Charlie Donlea</small></p>
+              <p class="card-text">Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas à beira de um longo trecho de água intocada.Duas semanas atrás, a estudante de direito Becca Eckersley foi brutalmente assassinada em uma dessas casas. Filha de um poderoso advogado, Becca estava no auge de sua vida. Atraída instintivamente pela notícia, a repórter Kelsey Castle vai até a cidade para investigar o caso. ...E LOGO SE ESTABELECE UMA CONEXÃO ÍNTIMA QUANDO UM VIVO CAMINHA NAS MESMAS PEGADAS DOS MORTOS...E enquanto descobre sobre as amizades de Becca, sua vida amorosa e os segredos que ela guardava, a repórter fica cada vez mais convencida de que a verdade sobre o que aconteceu com Becca pode ser a chave para superar as marcas sombrias de seu próprio passado.</p>
+            <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+            <div class="card-body">
+              <a href="https://a.co/d/fsoBHs6" class="card-link">Clique aqui</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..\static\livro\preconceito.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Orgulho e preconceito</h5>
+            <p class="card-text"><small class="text-body-secondary">Jane Austen</small></p>
+            <p class="card-text">Orgulho e preconceito é o livro mais famoso de Jane Austen e possui uma série de personagens inesquecíveis e um enredo memorável. Austen nos apresenta Elizabeth Bennet como heroína irresistível e seu pretendente aristocrático, o sr. Darcy. Nesse livro, aspectos diferentes são abordados: orgulho encontra preconceito, ascendência social confronta desprezo social, equívocos e julgamentos antecipados conduzem alguns personagens ao sofrimento e ao escândalo. O livro pode ser considerado a obra-prima da escritora, que equilibra comédia com seriedade, observação meticulosa das atitudes humanas e sua ironia refinada. A nova coleção possui capa dura e estilo inspirado nos bullet journals.
+              </p>
+              <br>
+              <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+            <div class="card-body">
+              <a href="https://a.co/d/6X5EtgX" class="card-link">Clique aqui</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..\static\livro\hevelyn.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Os sete maridos de Hevelyn Hugo</h5>
+            <p class="card-text"><small class="text-body-secondary">Taylor Jenkins</small></p>
+            <p class="card-text">Com todo o esplendor que só a Hollywood do século passado pode oferecer, esta é uma narrativa inesquecível sobre os sacrifícios que fazemos por amor, o perigo dos segredos e o preço da fama.
+
+              Lendária estrela de Hollywood, Evelyn Hugo sempre esteve sob os holofotes ― seja estrelando uma produção vencedora do Oscar, protagonizando algum escândalo ou aparecendo com um novo marido… pela sétima vez. Agora, prestes a completar oitenta anos e reclusa em seu apartamento no Upper East Side, a famigerada atriz decide contar a própria história ― ou sua “verdadeira história” ―, mas com uma condição: que Monique Grant, jornalista iniciante e até então desconhecida, seja a entrevistadora. Ao embarcar nessa misteriosa empreitada, a jovem repórter começa a se dar conta de que nada é por acaso ― e que suas trajetórias podem estar profunda e irreversivelmente conectadas.
+              </p>
+              <br>
+              <p class="card-text"><small class="text-body-secondary">Compre no link abaixo!</small></p>
+            <div class="card-body">
+              <a href="https://a.co/d/9zlSxIV" class="card-link">Clique aqui</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+        
+      
+  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
